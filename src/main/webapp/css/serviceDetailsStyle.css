@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* General Spacing */
+.container {
+	max-width: 1200px;
+}
+
+/* Card Styling */
+.card-service {
+	background-color: #f8f9fa; /* Light grey */
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.card-details {
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+	border-radius: 15px; /* Rounded corners */
+	background-color: #ffffff; /* Keep the card white for readability */
+}
+
+.card-details h5 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #007bff; /* Match the primary theme color */
+}
+
+.card-details p {
+	font-size: 1rem;
+	color: #6c757d; /* Muted text color */
+}
+
+.card-title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #0d6efd; /*Primary Bootstrap color*/
+	letter-spacing: 0.5px;
+}
+
+.card-text {
+	font-family: 'Open Sans', sans-serif;
+	color: #6c757d; /* Bootstrap text-muted */
+	line-height: 1.8;
+}
+
+
+/* Image Styling */
+img.rounded-circle {
+	border: 4px solid #e9ecef; /* Light border around image */
+}
+
+img.rounded-circle:hover {
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media ( max-width : 768px) {
+	.row.align-items-center {
+		flex-direction: column-reverse;
+	}
+	.card {
+		text-align: center;
+	}
+}

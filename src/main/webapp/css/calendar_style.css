@@ -1,0 +1,114 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+/*body{
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  min-height: 100vh;
+}*/
+div .wrapper{
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: transparent;
+}
+div .wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+ header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+} 
+div .icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+} 
+div .calendar{
+  padding: 20px;
+}
+div .calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+div .calendar .days{
+  margin-bottom: 20px;
+}
+div .calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+div .calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+div .calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+div .days li.inactive{
+  color: #aaa;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+div .days li.today{
+  color: #fff;
+  pointer-events: none;
+}
+div .days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+div .days li.today::before{
+  background: #2289e6;
+}
+div .days li:not(.active):hover::before{
+  background: #eaf6ff;
+}
+
+div .days li.selected-date {
+    font-weight: bold;
+    color: #2289e6;
+}
+
+div .days li.selected-date::before{
+  background: #c2def8;
+}

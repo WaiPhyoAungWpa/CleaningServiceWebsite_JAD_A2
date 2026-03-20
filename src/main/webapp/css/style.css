@@ -1,0 +1,250 @@
+@charset "UTF-8";
+div .card-img-top {
+    width: 100%; /* Ensures the image takes up the full width of the card */
+    height: 200px; /* Sets a fixed height */
+    object-fit: cover; /* Crops the image to fit the dimensions without distortion */
+}
+
+div .category-icon {
+	width: 50px;
+}
+
+div .btn1 {
+	border-radius: 15px;
+	border-style: solid;
+ 	border-color: #fdd67a;
+	border-width: 3px;
+}
+
+div .btn2 {
+	border-radius: 15px;
+	border-style: solid;
+ 	border-color: #98ceff;
+	border-width: 3px;
+}
+
+div .btn3 {
+	border-radius: 15px;
+	border-style: solid;
+ 	border-color: #b0e4df;
+	border-width: 3px;
+}
+
+div .active-filter {
+    background-color: black !important; /* Change color to your desired active state */
+    color: black !important;
+}
+
+div .svg-wave {
+    position: absolute;
+    bottom: 0;
+}
+
+div .card-body {
+	z-index: 1
+}
+
+div .residential .svg-wave path {
+    fill: #fdd67a;
+}
+
+div .commercial .svg-wave path {
+    fill: #98ceff;
+}
+
+div .others .svg-wave path {
+    fill: #b0e4df;
+}
+
+div .full-screen-div {
+    height: 80vh; /* Full viewport height */
+	background-color: transparent;
+}
+div .booking-container {
+	height: 80vh;
+	background-color: white; /* White container */
+	border-radius: 15px; /* Rounded corners */
+	padding: 30px; /* Add padding inside the container */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+div .service-card img {
+	border-radius: 15px;
+}
+
+div .time-slot {
+	border: 2px solid #b3d8f4;
+	border-radius: 15px;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+div .divider {
+	border-right: 1px solid #ccc; /* Faint vertical line */
+}
+
+div .scrollable-content {
+	height: 75vh;
+	overflow-y: scroll; /* Add this line */
+    scroll-behavior: smooth;
+	padding-bottom: 30px;
+}
+div .options {
+    display: flex;
+    justify-content: space-between; /* Ensure equal space between items */
+    align-items: center; /* Vertically center the items */
+    width: 100%; /* Ensure the parent takes up available space */
+}
+
+div .options-time, .options-button {
+    flex-grow: 1; /* Allows the time-slot and button to take up available space equally */
+}
+
+div .options-time {
+	min-width: 150px;
+    text-align: center;
+}
+
+div .options-button {
+	border-radius: 10px;
+	min-width: 50px;
+    /* Optional: You can style the button */
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: none; /* Hide the button by default */
+}
+
+div .options:hover .options-time{
+    width: 150px; /* Increase width on hover */
+    color: white;
+    background-color: #021526;
+    pointer-events: none; /* Disable interaction */
+}
+
+div .options:hover .options-button {
+    display: inline-block; /* Show button when .options is hovered */
+}
+
+div .price {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+div .remove-btn {
+  font-size: 0.85rem;
+}
+  .item-container {
+    height: 55vh;
+    overflow-y: scroll; /* Add this line */
+    scroll-behavior: smooth;
+  }
+div .selected-time{
+  min-width: 150px;
+  text-align: center;
+  border-radius: 10px;
+  margin:auto;
+}
+
+ div .selected-booking-container {
+    max-width: 80vw; /* Adjust as needed for a tighter fit */
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Ensure enough padding for inner content */
+    border: 1px solid #ddd; /* Optional: Add a border for a clear boundary */
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+div .service-img{
+	max-height: 80px;
+	max-width: 120px;
+}
+
+ div .stars {
+    color: #ffc107; /* Gold for active stars */
+    font-size: 1.5rem; /* Adjust star size */
+  }
+  
+ div .star {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+ div .star.faint {
+    color: #ddd; /* Gray for faint stars */
+  }
+  
+
+ div .description-container {
+    width: 20vw;
+    background-color: #d0e7f9;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+ div .review-container {
+    max-width: 80vw; /* Adjust as needed for a tighter fit */
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Ensure enough padding for inner content */
+    border: 1px solid #ddd; /* Optional: Add a border for a clear boundary */
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    background-color: #f4f6f8;
+  }
+  
+ div .stars {
+    color: #ffc107; /* Gold for stars */
+    font-size: 1.5rem; /* Adjust star size */
+  }
+  
+ div .star {
+    cursor: pointer;
+  }
+  
+ div .feedback-textarea {
+    border-radius: 10px;
+    height: 120px; /* Set a consistent height */
+    resize: none; /* Prevent resizing */
+    font-size: 0.9rem;
+    color: #495057; /* Dark gray text */
+  }
+  
+ div .feedback-textarea::placeholder {
+    color: #adb5bd; /* Lighter gray for placeholder */
+  }
+  
+ div .btn-success {
+    background-color: #28a745; /* Green button */
+    border: none;
+  }
+  
+ div .btn-success:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+  }
+  
+ div h5 {
+    font-weight: bold;
+  }
+  
+html, body {
+    height: 100%; /* Ensures the body fills the entire viewport height */
+    margin: 0;    /* Removes default margin for body */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+.content {
+	flex-grow: 1;
+}
+  
+
